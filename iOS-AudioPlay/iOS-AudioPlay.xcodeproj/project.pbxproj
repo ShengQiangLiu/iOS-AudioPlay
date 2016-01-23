@@ -13,6 +13,27 @@
 		84FEC5341C5235C100332551 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FEC5321C5235C100332551 /* Main.storyboard */; };
 		84FEC5361C5235C100332551 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FEC5351C5235C100332551 /* Assets.xcassets */; };
 		84FEC5391C5235C100332551 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FEC5371C5235C100332551 /* LaunchScreen.storyboard */; };
+		84FEC5421C525FEE00332551 /* OverviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC5411C525FEE00332551 /* OverviewViewController.m */; };
+		84FEC5451C52615200332551 /* AudioSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC5441C52615200332551 /* AudioSessionViewController.m */; };
+		84FEC5491C52627400332551 /* EQAudioSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC5481C52627400332551 /* EQAudioSession.m */; };
+		84FEC54D1C52707400332551 /* AudioFileStreamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC54C1C52707400332551 /* AudioFileStreamViewController.m */; };
+		84FEC5501C52714200332551 /* EQParsedAudioData.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC54F1C52714200332551 /* EQParsedAudioData.m */; };
+		84FEC5531C52718A00332551 /* EQAudioFileStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC5521C52718A00332551 /* EQAudioFileStream.m */; };
+		84FEC5591C535D5E00332551 /* AudioFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC5581C535D5E00332551 /* AudioFileViewController.m */; };
+		84FEC55C1C535F4D00332551 /* EQAudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC55B1C535F4D00332551 /* EQAudioFile.m */; };
+		84FEC5601C53676900332551 /* AudioQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC55F1C53676900332551 /* AudioQueueViewController.m */; };
+		84FEC5641C536E6B00332551 /* SimpleAudioPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC5631C536E6B00332551 /* SimpleAudioPlayerViewController.m */; };
+		84FEC5731C536E7B00332551 /* MCAudioSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC5661C536E7B00332551 /* MCAudioSession.m */; };
+		84FEC5741C536E7B00332551 /* MCAudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC5681C536E7B00332551 /* MCAudioFile.m */; };
+		84FEC5751C536E7B00332551 /* MCAudioFileStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC56A1C536E7B00332551 /* MCAudioFileStream.m */; };
+		84FEC5761C536E7B00332551 /* MCAudioOutputQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC56C1C536E7B00332551 /* MCAudioOutputQueue.m */; };
+		84FEC5771C536E7B00332551 /* MCParsedAudioData.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC56E1C536E7B00332551 /* MCParsedAudioData.m */; };
+		84FEC5781C536E7B00332551 /* MCAudioBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC5701C536E7B00332551 /* MCAudioBuffer.m */; };
+		84FEC5791C536E7B00332551 /* MCSimpleAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC5721C536E7B00332551 /* MCSimpleAudioPlayer.m */; };
+		84FEC57C1C536E8500332551 /* NSTimer+BlocksSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC57B1C536E8500332551 /* NSTimer+BlocksSupport.m */; };
+		84FEC5801C536E9500332551 /* CAFSample.caf in Resources */ = {isa = PBXBuildFile; fileRef = 84FEC57D1C536E9500332551 /* CAFSample.caf */; };
+		84FEC5811C536E9500332551 /* M4ASample.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 84FEC57E1C536E9500332551 /* M4ASample.m4a */; };
+		84FEC5821C536E9500332551 /* MP3Sample.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84FEC57F1C536E9500332551 /* MP3Sample.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +47,45 @@
 		84FEC5351C5235C100332551 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84FEC5381C5235C100332551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84FEC53A1C5235C100332551 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84FEC5401C525FEE00332551 /* OverviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverviewViewController.h; sourceTree = "<group>"; };
+		84FEC5411C525FEE00332551 /* OverviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverviewViewController.m; sourceTree = "<group>"; };
+		84FEC5431C52615200332551 /* AudioSessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioSessionViewController.h; sourceTree = "<group>"; };
+		84FEC5441C52615200332551 /* AudioSessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioSessionViewController.m; sourceTree = "<group>"; };
+		84FEC5471C52627400332551 /* EQAudioSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EQAudioSession.h; sourceTree = "<group>"; };
+		84FEC5481C52627400332551 /* EQAudioSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EQAudioSession.m; sourceTree = "<group>"; };
+		84FEC54B1C52707400332551 /* AudioFileStreamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioFileStreamViewController.h; sourceTree = "<group>"; };
+		84FEC54C1C52707400332551 /* AudioFileStreamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioFileStreamViewController.m; sourceTree = "<group>"; };
+		84FEC54E1C52714200332551 /* EQParsedAudioData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EQParsedAudioData.h; sourceTree = "<group>"; };
+		84FEC54F1C52714200332551 /* EQParsedAudioData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EQParsedAudioData.m; sourceTree = "<group>"; };
+		84FEC5511C52718A00332551 /* EQAudioFileStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EQAudioFileStream.h; sourceTree = "<group>"; };
+		84FEC5521C52718A00332551 /* EQAudioFileStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EQAudioFileStream.m; sourceTree = "<group>"; };
+		84FEC5571C535D5E00332551 /* AudioFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioFileViewController.h; sourceTree = "<group>"; };
+		84FEC5581C535D5E00332551 /* AudioFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioFileViewController.m; sourceTree = "<group>"; };
+		84FEC55A1C535F4D00332551 /* EQAudioFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EQAudioFile.h; sourceTree = "<group>"; };
+		84FEC55B1C535F4D00332551 /* EQAudioFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EQAudioFile.m; sourceTree = "<group>"; };
+		84FEC55E1C53676900332551 /* AudioQueueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioQueueViewController.h; sourceTree = "<group>"; };
+		84FEC55F1C53676900332551 /* AudioQueueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioQueueViewController.m; sourceTree = "<group>"; };
+		84FEC5621C536E6B00332551 /* SimpleAudioPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAudioPlayerViewController.h; sourceTree = "<group>"; };
+		84FEC5631C536E6B00332551 /* SimpleAudioPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleAudioPlayerViewController.m; sourceTree = "<group>"; };
+		84FEC5651C536E7B00332551 /* MCAudioSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCAudioSession.h; sourceTree = "<group>"; };
+		84FEC5661C536E7B00332551 /* MCAudioSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCAudioSession.m; sourceTree = "<group>"; };
+		84FEC5671C536E7B00332551 /* MCAudioFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCAudioFile.h; sourceTree = "<group>"; };
+		84FEC5681C536E7B00332551 /* MCAudioFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCAudioFile.m; sourceTree = "<group>"; };
+		84FEC5691C536E7B00332551 /* MCAudioFileStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCAudioFileStream.h; sourceTree = "<group>"; };
+		84FEC56A1C536E7B00332551 /* MCAudioFileStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCAudioFileStream.m; sourceTree = "<group>"; };
+		84FEC56B1C536E7B00332551 /* MCAudioOutputQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCAudioOutputQueue.h; sourceTree = "<group>"; };
+		84FEC56C1C536E7B00332551 /* MCAudioOutputQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCAudioOutputQueue.m; sourceTree = "<group>"; };
+		84FEC56D1C536E7B00332551 /* MCParsedAudioData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCParsedAudioData.h; sourceTree = "<group>"; };
+		84FEC56E1C536E7B00332551 /* MCParsedAudioData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCParsedAudioData.m; sourceTree = "<group>"; };
+		84FEC56F1C536E7B00332551 /* MCAudioBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCAudioBuffer.h; sourceTree = "<group>"; };
+		84FEC5701C536E7B00332551 /* MCAudioBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCAudioBuffer.m; sourceTree = "<group>"; };
+		84FEC5711C536E7B00332551 /* MCSimpleAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSimpleAudioPlayer.h; sourceTree = "<group>"; };
+		84FEC5721C536E7B00332551 /* MCSimpleAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSimpleAudioPlayer.m; sourceTree = "<group>"; };
+		84FEC57A1C536E8500332551 /* NSTimer+BlocksSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+BlocksSupport.h"; sourceTree = "<group>"; };
+		84FEC57B1C536E8500332551 /* NSTimer+BlocksSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+BlocksSupport.m"; sourceTree = "<group>"; };
+		84FEC57D1C536E9500332551 /* CAFSample.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CAFSample.caf; sourceTree = "<group>"; };
+		84FEC57E1C536E9500332551 /* M4ASample.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = M4ASample.m4a; sourceTree = "<group>"; };
+		84FEC57F1C536E9500332551 /* MP3Sample.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MP3Sample.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +122,13 @@
 				84FEC52D1C5235C100332551 /* AppDelegate.m */,
 				84FEC52F1C5235C100332551 /* ViewController.h */,
 				84FEC5301C5235C100332551 /* ViewController.m */,
+				84FEC5401C525FEE00332551 /* OverviewViewController.h */,
+				84FEC5411C525FEE00332551 /* OverviewViewController.m */,
+				84FEC5611C536E3700332551 /* 音频播放器 */,
+				84FEC55D1C53674E00332551 /* AudioQueue */,
+				84FEC5561C535D3C00332551 /* AudioFile */,
+				84FEC54A1C52703A00332551 /* AudioFileStream */,
+				84FEC5461C52623200332551 /* AudioSession */,
 				84FEC5321C5235C100332551 /* Main.storyboard */,
 				84FEC5351C5235C100332551 /* Assets.xcassets */,
 				84FEC5371C5235C100332551 /* LaunchScreen.storyboard */,
@@ -74,9 +141,81 @@
 		84FEC5291C5235C100332551 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				84FEC57D1C536E9500332551 /* CAFSample.caf */,
+				84FEC57E1C536E9500332551 /* M4ASample.m4a */,
+				84FEC57F1C536E9500332551 /* MP3Sample.mp3 */,
 				84FEC52A1C5235C100332551 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84FEC5461C52623200332551 /* AudioSession */ = {
+			isa = PBXGroup;
+			children = (
+				84FEC5431C52615200332551 /* AudioSessionViewController.h */,
+				84FEC5441C52615200332551 /* AudioSessionViewController.m */,
+				84FEC5471C52627400332551 /* EQAudioSession.h */,
+				84FEC5481C52627400332551 /* EQAudioSession.m */,
+			);
+			name = AudioSession;
+			sourceTree = "<group>";
+		};
+		84FEC54A1C52703A00332551 /* AudioFileStream */ = {
+			isa = PBXGroup;
+			children = (
+				84FEC54B1C52707400332551 /* AudioFileStreamViewController.h */,
+				84FEC54C1C52707400332551 /* AudioFileStreamViewController.m */,
+				84FEC54E1C52714200332551 /* EQParsedAudioData.h */,
+				84FEC54F1C52714200332551 /* EQParsedAudioData.m */,
+				84FEC5511C52718A00332551 /* EQAudioFileStream.h */,
+				84FEC5521C52718A00332551 /* EQAudioFileStream.m */,
+			);
+			name = AudioFileStream;
+			sourceTree = "<group>";
+		};
+		84FEC5561C535D3C00332551 /* AudioFile */ = {
+			isa = PBXGroup;
+			children = (
+				84FEC5571C535D5E00332551 /* AudioFileViewController.h */,
+				84FEC5581C535D5E00332551 /* AudioFileViewController.m */,
+				84FEC55A1C535F4D00332551 /* EQAudioFile.h */,
+				84FEC55B1C535F4D00332551 /* EQAudioFile.m */,
+			);
+			name = AudioFile;
+			sourceTree = "<group>";
+		};
+		84FEC55D1C53674E00332551 /* AudioQueue */ = {
+			isa = PBXGroup;
+			children = (
+				84FEC55E1C53676900332551 /* AudioQueueViewController.h */,
+				84FEC55F1C53676900332551 /* AudioQueueViewController.m */,
+			);
+			name = AudioQueue;
+			sourceTree = "<group>";
+		};
+		84FEC5611C536E3700332551 /* 音频播放器 */ = {
+			isa = PBXGroup;
+			children = (
+				84FEC57A1C536E8500332551 /* NSTimer+BlocksSupport.h */,
+				84FEC57B1C536E8500332551 /* NSTimer+BlocksSupport.m */,
+				84FEC5651C536E7B00332551 /* MCAudioSession.h */,
+				84FEC5661C536E7B00332551 /* MCAudioSession.m */,
+				84FEC5671C536E7B00332551 /* MCAudioFile.h */,
+				84FEC5681C536E7B00332551 /* MCAudioFile.m */,
+				84FEC5691C536E7B00332551 /* MCAudioFileStream.h */,
+				84FEC56A1C536E7B00332551 /* MCAudioFileStream.m */,
+				84FEC56B1C536E7B00332551 /* MCAudioOutputQueue.h */,
+				84FEC56C1C536E7B00332551 /* MCAudioOutputQueue.m */,
+				84FEC56D1C536E7B00332551 /* MCParsedAudioData.h */,
+				84FEC56E1C536E7B00332551 /* MCParsedAudioData.m */,
+				84FEC56F1C536E7B00332551 /* MCAudioBuffer.h */,
+				84FEC5701C536E7B00332551 /* MCAudioBuffer.m */,
+				84FEC5711C536E7B00332551 /* MCSimpleAudioPlayer.h */,
+				84FEC5721C536E7B00332551 /* MCSimpleAudioPlayer.m */,
+				84FEC5621C536E6B00332551 /* SimpleAudioPlayerViewController.h */,
+				84FEC5631C536E6B00332551 /* SimpleAudioPlayerViewController.m */,
+			);
+			name = "音频播放器";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,6 +250,11 @@
 					84FEC5251C5235C100332551 = {
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = 4578F4TGJA;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -138,8 +282,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				84FEC5391C5235C100332551 /* LaunchScreen.storyboard in Resources */,
+				84FEC5801C536E9500332551 /* CAFSample.caf in Resources */,
 				84FEC5361C5235C100332551 /* Assets.xcassets in Resources */,
 				84FEC5341C5235C100332551 /* Main.storyboard in Resources */,
+				84FEC5811C536E9500332551 /* M4ASample.m4a in Resources */,
+				84FEC5821C536E9500332551 /* MP3Sample.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,8 +298,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				84FEC5311C5235C100332551 /* ViewController.m in Sources */,
+				84FEC54D1C52707400332551 /* AudioFileStreamViewController.m in Sources */,
+				84FEC5451C52615200332551 /* AudioSessionViewController.m in Sources */,
+				84FEC5601C53676900332551 /* AudioQueueViewController.m in Sources */,
+				84FEC5761C536E7B00332551 /* MCAudioOutputQueue.m in Sources */,
+				84FEC5531C52718A00332551 /* EQAudioFileStream.m in Sources */,
+				84FEC5421C525FEE00332551 /* OverviewViewController.m in Sources */,
+				84FEC5591C535D5E00332551 /* AudioFileViewController.m in Sources */,
+				84FEC57C1C536E8500332551 /* NSTimer+BlocksSupport.m in Sources */,
+				84FEC5781C536E7B00332551 /* MCAudioBuffer.m in Sources */,
+				84FEC5741C536E7B00332551 /* MCAudioFile.m in Sources */,
 				84FEC52E1C5235C100332551 /* AppDelegate.m in Sources */,
 				84FEC52B1C5235C100332551 /* main.m in Sources */,
+				84FEC5491C52627400332551 /* EQAudioSession.m in Sources */,
+				84FEC5791C536E7B00332551 /* MCSimpleAudioPlayer.m in Sources */,
+				84FEC5641C536E6B00332551 /* SimpleAudioPlayerViewController.m in Sources */,
+				84FEC5771C536E7B00332551 /* MCParsedAudioData.m in Sources */,
+				84FEC5751C536E7B00332551 /* MCAudioFileStream.m in Sources */,
+				84FEC55C1C535F4D00332551 /* EQAudioFile.m in Sources */,
+				84FEC5501C52714200332551 /* EQParsedAudioData.m in Sources */,
+				84FEC5731C536E7B00332551 /* MCAudioSession.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +360,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chen GangQiang (785VZN2ZN7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chen GangQiang (785VZN2ZN7)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -238,7 +404,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chen GangQiang (785VZN2ZN7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chen GangQiang (785VZN2ZN7)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -263,6 +430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "iOS-AudioPlay/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shengqiangliu.iOS-AudioPlay";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,6 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "iOS-AudioPlay/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shengqiangliu.iOS-AudioPlay";
 				PRODUCT_NAME = "$(TARGET_NAME)";
