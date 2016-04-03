@@ -13,10 +13,13 @@
 		7668CEA61CB004CD002FA1F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7668CEA41CB004CD002FA1F1 /* Main.storyboard */; };
 		7668CEA81CB004CD002FA1F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7668CEA71CB004CD002FA1F1 /* Assets.xcassets */; };
 		7668CEAB1CB004CD002FA1F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7668CEA91CB004CD002FA1F1 /* LaunchScreen.storyboard */; };
+		7668CEB41CB0053B002FA1F1 /* SimpleAUGraphPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7668CEB31CB0053B002FA1F1 /* SimpleAUGraphPlayer.m */; settings = {ASSET_TAGS = (); }; };
+		7668CEB71CB020E9002FA1F1 /* SimpleAudioQueuePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7668CEB61CB020E9002FA1F1 /* SimpleAudioQueuePlayer.m */; settings = {ASSET_TAGS = (); }; };
+		7668CEBB1CB0EB2A002FA1F1 /* SimpleAudioUnitPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7668CEBA1CB0EB2A002FA1F1 /* SimpleAudioUnitPlayer.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7668CE981CB004CD002FA1F1 /* AudioGraphSimplePlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioGraphSimplePlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7668CE981CB004CD002FA1F1 /* AudioSimplePlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioSimplePlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7668CE9C1CB004CD002FA1F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7668CE9E1CB004CD002FA1F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7668CE9F1CB004CD002FA1F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +29,12 @@
 		7668CEA71CB004CD002FA1F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7668CEAA1CB004CD002FA1F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7668CEAC1CB004CD002FA1F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7668CEB21CB0053B002FA1F1 /* SimpleAUGraphPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAUGraphPlayer.h; sourceTree = "<group>"; };
+		7668CEB31CB0053B002FA1F1 /* SimpleAUGraphPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleAUGraphPlayer.m; sourceTree = "<group>"; };
+		7668CEB51CB020E9002FA1F1 /* SimpleAudioQueuePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAudioQueuePlayer.h; sourceTree = "<group>"; };
+		7668CEB61CB020E9002FA1F1 /* SimpleAudioQueuePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleAudioQueuePlayer.m; sourceTree = "<group>"; };
+		7668CEB91CB0EB2A002FA1F1 /* SimpleAudioUnitPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAudioUnitPlayer.h; sourceTree = "<group>"; };
+		7668CEBA1CB0EB2A002FA1F1 /* SimpleAudioUnitPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleAudioUnitPlayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +59,7 @@
 		7668CE991CB004CD002FA1F1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7668CE981CB004CD002FA1F1 /* AudioGraphSimplePlayer.app */,
+				7668CE981CB004CD002FA1F1 /* AudioSimplePlayer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +71,12 @@
 				7668CE9F1CB004CD002FA1F1 /* AppDelegate.m */,
 				7668CEA11CB004CD002FA1F1 /* ViewController.h */,
 				7668CEA21CB004CD002FA1F1 /* ViewController.m */,
+				7668CEB91CB0EB2A002FA1F1 /* SimpleAudioUnitPlayer.h */,
+				7668CEBA1CB0EB2A002FA1F1 /* SimpleAudioUnitPlayer.m */,
+				7668CEB21CB0053B002FA1F1 /* SimpleAUGraphPlayer.h */,
+				7668CEB31CB0053B002FA1F1 /* SimpleAUGraphPlayer.m */,
+				7668CEB51CB020E9002FA1F1 /* SimpleAudioQueuePlayer.h */,
+				7668CEB61CB020E9002FA1F1 /* SimpleAudioQueuePlayer.m */,
 				7668CEA41CB004CD002FA1F1 /* Main.storyboard */,
 				7668CEA71CB004CD002FA1F1 /* Assets.xcassets */,
 				7668CEA91CB004CD002FA1F1 /* LaunchScreen.storyboard */,
@@ -82,9 +97,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7668CE971CB004CD002FA1F1 /* AudioGraphSimplePlayer */ = {
+		7668CE971CB004CD002FA1F1 /* AudioSimplePlayer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7668CEAF1CB004CD002FA1F1 /* Build configuration list for PBXNativeTarget "AudioGraphSimplePlayer" */;
+			buildConfigurationList = 7668CEAF1CB004CD002FA1F1 /* Build configuration list for PBXNativeTarget "AudioSimplePlayer" */;
 			buildPhases = (
 				7668CE941CB004CD002FA1F1 /* Sources */,
 				7668CE951CB004CD002FA1F1 /* Frameworks */,
@@ -94,9 +109,9 @@
 			);
 			dependencies = (
 			);
-			name = AudioGraphSimplePlayer;
+			name = AudioSimplePlayer;
 			productName = AudioGraphSimplePlayer;
-			productReference = 7668CE981CB004CD002FA1F1 /* AudioGraphSimplePlayer.app */;
+			productReference = 7668CE981CB004CD002FA1F1 /* AudioSimplePlayer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -113,7 +128,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7668CE931CB004CD002FA1F1 /* Build configuration list for PBXProject "AudioGraphSimplePlayer" */;
+			buildConfigurationList = 7668CE931CB004CD002FA1F1 /* Build configuration list for PBXProject "AudioSimplePlayer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -126,7 +141,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7668CE971CB004CD002FA1F1 /* AudioGraphSimplePlayer */,
+				7668CE971CB004CD002FA1F1 /* AudioSimplePlayer */,
 			);
 		};
 /* End PBXProject section */
@@ -149,7 +164,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7668CEB41CB0053B002FA1F1 /* SimpleAUGraphPlayer.m in Sources */,
+				7668CEBB1CB0EB2A002FA1F1 /* SimpleAudioUnitPlayer.m in Sources */,
 				7668CEA31CB004CD002FA1F1 /* ViewController.m in Sources */,
+				7668CEB71CB020E9002FA1F1 /* SimpleAudioQueuePlayer.m in Sources */,
 				7668CEA01CB004CD002FA1F1 /* AppDelegate.m in Sources */,
 				7668CE9D1CB004CD002FA1F1 /* main.m in Sources */,
 			);
@@ -264,7 +282,7 @@
 				INFOPLIST_FILE = AudioGraphSimplePlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.shengqiang.com.AudioGraphSimplePlayer;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AudioSimplePlayer;
 			};
 			name = Debug;
 		};
@@ -275,14 +293,14 @@
 				INFOPLIST_FILE = AudioGraphSimplePlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.shengqiang.com.AudioGraphSimplePlayer;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AudioSimplePlayer;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7668CE931CB004CD002FA1F1 /* Build configuration list for PBXProject "AudioGraphSimplePlayer" */ = {
+		7668CE931CB004CD002FA1F1 /* Build configuration list for PBXProject "AudioSimplePlayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7668CEAD1CB004CD002FA1F1 /* Debug */,
@@ -291,7 +309,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7668CEAF1CB004CD002FA1F1 /* Build configuration list for PBXNativeTarget "AudioGraphSimplePlayer" */ = {
+		7668CEAF1CB004CD002FA1F1 /* Build configuration list for PBXNativeTarget "AudioSimplePlayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7668CEB01CB004CD002FA1F1 /* Debug */,

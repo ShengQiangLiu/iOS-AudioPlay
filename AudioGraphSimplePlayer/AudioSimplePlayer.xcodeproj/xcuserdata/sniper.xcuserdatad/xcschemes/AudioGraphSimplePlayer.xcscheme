@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7668CE971CB004CD002FA1F1"
-               BuildableName = "AudioGraphSimplePlayer.app"
-               BlueprintName = "AudioGraphSimplePlayer"
-               ReferencedContainer = "container:AudioGraphSimplePlayer.xcodeproj">
+               BuildableName = "AudioSimplePlayer.app"
+               BlueprintName = "AudioSimplePlayer"
+               ReferencedContainer = "container:AudioSimplePlayer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7668CE971CB004CD002FA1F1"
-            BuildableName = "AudioGraphSimplePlayer.app"
-            BlueprintName = "AudioGraphSimplePlayer"
-            ReferencedContainer = "container:AudioGraphSimplePlayer.xcodeproj">
+            BuildableName = "AudioSimplePlayer.app"
+            BlueprintName = "AudioSimplePlayer"
+            ReferencedContainer = "container:AudioSimplePlayer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7668CE971CB004CD002FA1F1"
-            BuildableName = "AudioGraphSimplePlayer.app"
-            BlueprintName = "AudioGraphSimplePlayer"
-            ReferencedContainer = "container:AudioGraphSimplePlayer.xcodeproj">
+            BuildableName = "AudioSimplePlayer.app"
+            BlueprintName = "AudioSimplePlayer"
+            ReferencedContainer = "container:AudioSimplePlayer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7668CE971CB004CD002FA1F1"
-            BuildableName = "AudioGraphSimplePlayer.app"
-            BlueprintName = "AudioGraphSimplePlayer"
-            ReferencedContainer = "container:AudioGraphSimplePlayer.xcodeproj">
+            BuildableName = "AudioSimplePlayer.app"
+            BlueprintName = "AudioSimplePlayer"
+            ReferencedContainer = "container:AudioSimplePlayer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
