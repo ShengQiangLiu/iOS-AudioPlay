@@ -16,6 +16,7 @@
 		7668CEB41CB0053B002FA1F1 /* SimpleAUGraphPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7668CEB31CB0053B002FA1F1 /* SimpleAUGraphPlayer.m */; settings = {ASSET_TAGS = (); }; };
 		7668CEB71CB020E9002FA1F1 /* SimpleAudioQueuePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7668CEB61CB020E9002FA1F1 /* SimpleAudioQueuePlayer.m */; settings = {ASSET_TAGS = (); }; };
 		7668CEBB1CB0EB2A002FA1F1 /* SimpleAudioUnitPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7668CEBA1CB0EB2A002FA1F1 /* SimpleAudioUnitPlayer.m */; settings = {ASSET_TAGS = (); }; };
+		7668CEBD1CB11936002FA1F1 /* DrumsMonoSTP.aif in Resources */ = {isa = PBXBuildFile; fileRef = 7668CEBC1CB11936002FA1F1 /* DrumsMonoSTP.aif */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		7668CEB61CB020E9002FA1F1 /* SimpleAudioQueuePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleAudioQueuePlayer.m; sourceTree = "<group>"; };
 		7668CEB91CB0EB2A002FA1F1 /* SimpleAudioUnitPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAudioUnitPlayer.h; sourceTree = "<group>"; };
 		7668CEBA1CB0EB2A002FA1F1 /* SimpleAudioUnitPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleAudioUnitPlayer.m; sourceTree = "<group>"; };
+		7668CEBC1CB11936002FA1F1 /* DrumsMonoSTP.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = DrumsMonoSTP.aif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				7668CEB31CB0053B002FA1F1 /* SimpleAUGraphPlayer.m */,
 				7668CEB51CB020E9002FA1F1 /* SimpleAudioQueuePlayer.h */,
 				7668CEB61CB020E9002FA1F1 /* SimpleAudioQueuePlayer.m */,
+				7668CEBC1CB11936002FA1F1 /* DrumsMonoSTP.aif */,
 				7668CEA41CB004CD002FA1F1 /* Main.storyboard */,
 				7668CEA71CB004CD002FA1F1 /* Assets.xcassets */,
 				7668CEA91CB004CD002FA1F1 /* LaunchScreen.storyboard */,
@@ -152,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7668CEAB1CB004CD002FA1F1 /* LaunchScreen.storyboard in Resources */,
+				7668CEBD1CB11936002FA1F1 /* DrumsMonoSTP.aif in Resources */,
 				7668CEA81CB004CD002FA1F1 /* Assets.xcassets in Resources */,
 				7668CEA61CB004CD002FA1F1 /* Main.storyboard in Resources */,
 			);

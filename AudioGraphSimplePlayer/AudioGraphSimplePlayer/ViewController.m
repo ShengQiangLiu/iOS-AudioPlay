@@ -11,6 +11,8 @@
 #import "SimpleAudioQueuePlayer.h"
 #import "SimpleAudioUnitPlayer.h"
 
+#import <Endian.h>
+
 @interface ViewController ()
 @property (nonatomic, strong) SimpleAUGraphPlayer *player;
 
@@ -55,3 +57,27 @@
 }
 
 @end
+
+
+/*OSStatus转成string的方法*/
+NSString * OSStatusToString(OSStatus status)
+{
+    size_t len = sizeof(UInt32);
+    long addr = (unsigned long)&status;
+    char cstring[5];
+    
+    len = (status >> 24) == 0 ? len - 1 : len;
+    len = (status >> 16) == 0 ? len - 1 : len;
+    len = (status >>  8) == 0 ? len - 1 : len;
+    len = (status >>  0) == 0 ? len - 1 : len;
+    
+    addr += (4 - len);
+    
+    status = EndianU32_NtoB(status);        // strings are big endian
+    
+    strncpy(cstring, (char *)addr, len);
+    cstring[len] = 0;
+    
+    return [NSString stringWithCString:(char *)cstring encoding:NSMacOSRomanStringEncoding];
+}
+

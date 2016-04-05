@@ -50,7 +50,7 @@ static AudioStreamBasicDescription KKSignedIntLinearPCMStreamDescription();
     AudioBufferList *renderBufferList;
     UInt32 renderBufferSize;
     
-    NSMutableArray *packets;
+    NSMutableArray *packetsArray;
     size_t readHead;
 }
 - (double)packetsPerSecond;
@@ -135,7 +135,7 @@ AudioStreamBasicDescription KKSignedIntLinearPCMStreamDescription()
         [self buildOutputUnit];
         
         playerStatus.stopped = NO;
-        packets = [[NSMutableArray alloc] init];
+        packetsArray = [[NSMutableArray alloc] init];
         
         // 第一步：建立 Audio Parser，指定 callback，以及建立 HTTP 連線，
         // 開始下載檔案
@@ -162,6 +162,7 @@ AudioStreamBasicDescription KKSignedIntLinearPCMStreamDescription()
     OSStatus status = AudioOutputUnitStart(audioUnit);
     NSAssert(noErr == status, @"AudioOutputUnitStart, error: %ld", (signed long)status);
 }
+
 - (void)pause
 {
     OSStatus status = AudioOutputUnitStop(audioUnit);
@@ -223,14 +224,16 @@ AudioStreamBasicDescription KKSignedIntLinearPCMStreamDescription()
         UInt32 packetSize = inPacketDescriptions[i].mDataByteSize;
         assert(packetSize > 0);
         NSData *packet = [NSData dataWithBytes:inInputData + packetStart length:packetSize];
-        [packets addObject:packet];
+        [packetsArray addObject:packet];
     }
     
     //  第五步，因為 parse 出來的 packets 夠多，緩衝內容夠大，因此開始
     //  播放
     
-    if (readHead == 0 && [packets count] > (int)([self packetsPerSecond] * 3)) {
-        if (playerStatus.stopped) {
+    if (readHead == 0 && [packetsArray count] > (int)([self packetsPerSecond] * 3))
+    {
+        if (playerStatus.stopped)
+        {
             [self play];
         }
     }
@@ -245,10 +248,11 @@ AudioStreamBasicDescription KKSignedIntLinearPCMStreamDescription()
 }
 
 - (OSStatus)callbackWithNumberOfFrames:(UInt32)inNumberOfFrames
-                                ioData:(AudioBufferList  *)inIoData busNumber:(UInt32)inBusNumber
+                                ioData:(AudioBufferList  *)inIoData
+                             busNumber:(UInt32)inBusNumber
 {
     @synchronized(self) {
-        if (readHead < [packets count]) {
+        if (readHead < [packetsArray count]) {
             @autoreleasepool {
                 UInt32 packetSize = inNumberOfFrames;
                 // 第七步： Remote IO node 的 render callback 中，呼叫 converter 將 packet 轉成 LPCM
@@ -290,12 +294,12 @@ AudioStreamBasicDescription KKSignedIntLinearPCMStreamDescription()
 {
     static AudioStreamPacketDescription aspdesc;
     
-    if (readHead >= [packets count]) {
+    if (readHead >= [packetsArray count]) {
         return KKAudioConverterCallbackErr_NoData;
     }
     
     ioData->mNumberBuffers = 1;
-    NSData *packet = packets[readHead];
+    NSData *packet = packetsArray[readHead];
     void const *data = [packet bytes];
     UInt32 length = (UInt32)[packet length];
     ioData->mBuffers[0].mData = (void *)data;

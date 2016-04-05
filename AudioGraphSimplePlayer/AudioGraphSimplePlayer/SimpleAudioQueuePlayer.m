@@ -32,10 +32,12 @@ static void KKAudioQueueRunningListener(void * inUserData,
         BOOL loaded;
     } playerStatus ;
     
+    // parser
     AudioFileStreamID audioFileStreamID;
     AudioQueueRef outputQueue;
     AudioStreamBasicDescription streamDescription;
     NSMutableArray *packets;
+    // 表示我們現在讀到第幾個 packet
     size_t readHead;
 }
 - (double)packetsPerSecond;
@@ -59,6 +61,8 @@ static void KKAudioQueueRunningListener(void * inUserData,
         
         // 第一步：建立 Audio Parser，指定 callback，以及建立 HTTP 連線，
         // 開始下載檔案
+        // KKAudioFileStreamPropertyListener  取得檔案格式的通知
+        // KKAudioFileStreamPacketsCallback 則是 packet 的 callback，會在分析出了 packet 的時候呼叫
         AudioFileStreamOpen((__bridge void * _Nullable)(self),
                             KKAudioFileStreamPropertyListener,
                             KKAudioFileStreamPacketsCallback,
@@ -92,8 +96,10 @@ static void KKAudioQueueRunningListener(void * inUserData,
 - (void)connection:(NSURLConnection *)connection
 didReceiveResponse:(NSURLResponse *)response
 {
-    if ([response isKindOfClass:[NSHTTPURLResponse class]]) {
-        if ([(NSHTTPURLResponse *)response statusCode] != 200) {
+    if ([response isKindOfClass:[NSHTTPURLResponse class]])
+    {
+        if ([(NSHTTPURLResponse *)response statusCode] != 200)
+        {
             NSLog(@"HTTP code:%ld", [(NSHTTPURLResponse *)response statusCode]);
             [connection cancel];
             playerStatus.stopped = YES;
@@ -125,27 +131,32 @@ didReceiveResponse:(NSURLResponse *)response
 - (void)_enqueueDataWithPacketsCount:(size_t)inPacketCount
 {
     NSLog(@"%s", __PRETTY_FUNCTION__);
-    if (!outputQueue) {
+    if (!outputQueue)
+    {
         return;
     }
     
-    if (readHead == [packets count]) {
+    if (readHead == [packets count])
+    {
         // 第六步：已經把所有 packet 都播完了，檔案播放結束。
-        if (playerStatus.loaded) {
+        if (playerStatus.loaded)
+        {
             AudioQueueStop(outputQueue, false);
             playerStatus.stopped = YES;
             return;
         }
     }
     
-    if (readHead + inPacketCount >= [packets count]) {
+    if (readHead + inPacketCount >= [packets count])
+    {
         inPacketCount = [packets count] - readHead;
     }
     
     UInt32 totalSize = 0;
     UInt32 index;
     
-    for (index = 0 ; index < inPacketCount ; index++) {
+    for (index = 0 ; index < inPacketCount ; index++)
+    {
         NSData *packet = packets[index + readHead];
         totalSize += packet.length;
     }
